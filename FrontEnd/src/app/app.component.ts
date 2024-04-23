@@ -22,7 +22,12 @@ export class AppComponent implements OnInit {
             label: 'Add Player',
             icon: 'pi pi-fw pi-file',
             routerLink: 'add',
-        }
+          },
+          {
+            label: 'Login',
+            icon: 'pi pi-fw pi-file',
+            routerLink: 'login',
+        },
         ];
   }
 }

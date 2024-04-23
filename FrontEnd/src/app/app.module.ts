@@ -1,4 +1,4 @@
-import { NgModule, OnInit } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -14,6 +14,7 @@ import { EditPlayerComponent } from './edit-player/edit-player.component';
 import { InputTextModule } from 'primeng/inputtext';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AddPlayerComponent } from './add-player/add-player.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -22,9 +23,9 @@ import { AddPlayerComponent } from './add-player/add-player.component';
     ViewPlayerComponent,
     EditPlayerComponent,
     AddPlayerComponent,
-    
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
@@ -33,10 +34,10 @@ import { AddPlayerComponent } from './add-player/add-player.component';
     HttpClientModule,
     TableModule,
     ButtonModule,
-    InputTextModule 
+    InputTextModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 
 
